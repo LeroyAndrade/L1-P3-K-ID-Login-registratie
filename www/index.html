@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html><!--iPhone X 375x812-->
 <head>
 <style>
 body{
-margin-top:40vw;
-margin-left:40vw;}
-.first {
+}
+
+#beginScherm{
+  font-size:3em;
+margin:40vh 10vw;
+
+}
+.first {display:inline-block;
+margin-top:2vh;
   animation-duration: 1s;
   animation-name: glissement;
-  animation-iteration-count: linear;
+  animation-iteration-count: linear;margin-left:161px;
 }
 b{
-display:block;
+
 }
 
 .second {margin-left:1vw;
 animation-delay: 1s;  animation-duration: 1s;
 animation-name: glissementi;
-animation-iteration-count: linear;
+animation-iteration-count: linear;margin-left:131px;
 }
 
-.third {display:block;margin-left:20px;
-animation-delay: 1s;  animation-duration: 1s;
-animation-name: glissementi;
-animation-iteration-count: linear;
+.third {
+ display:block;animation: .9s linear glissementino;
+animation-name: glissementino;
+animation-iteration-count: linear;margin-left:284px;
 }
 
 p{
@@ -55,21 +61,20 @@ margin-left:1vw;
   }
 }
 @keyframes glissementino {
-  from {
-    margin-left: 18%;
-  }
-  to {
-    margin-left: 0%;
-  }
+  0% {margin-left: 20%;}
+  50% {margin-left:10%;}
+  100% {margin-left:25%;}
 }
 </style>
 </head>
 <body>
-<section id="temp"></section>
-<b>Registreer en pak het leven weer op&#33;</b>
-<span class="first">Live </span>
-<span class="second arret">Love </span>
-<span class="third">Life </span>
+<section id="beginScherm"><b>Registreer en pak het leven weer op&#33;</b><br/>
+<span class="first">Love </span>
+<span class="second arret">Live </span>
+<span class="third">Life </span></section>
+
+<!-- opties.html zal na keyframes moeten verschijnen en de bovenstaande klasses
+doen verwijderen -->
 
 </body>
 </html>
